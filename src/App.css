@@ -1,0 +1,124 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #97b8d0, #fce4ec);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* App Header */
+.app-header {
+  background: linear-gradient(to right, #583f73, #3e69b2);
+  color: #a77878;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Main Quiz Container */
+.app-main {
+  background-color: #fff;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Question Info */
+.quiz-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Progress bar */
+.progress-bar-container {
+  background-color: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  width: 20%; /* Dynamically update this in JS */
+  transition: width 0.3s ease;
+}
+
+/* Question */
+.question {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Options List */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.option {
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  background-color: #fafafa;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.option:hover {
+  background-color: #e3f2fd;
+  border-color: #6a11cb;
+  transform: scale(1.02);
+}
+
+/* Label (A, B, etc.) */
+.option-label {
+  background-color: #6a11cb;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Correct / Wrong (optional logic classes) */
+.option.correct {
+  background-color: #c8e6c9;
+  border-color: #2e7d32;
+  color: #2e7d32;
+}
+
+.option.wrong {
+  background-color: #79b4de;
+  border-color: #c62828;
+  color: #b71c1c;
+}
